@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <h1>UNITINU Image Tool</h1>
+
+        <div id="drag_wrapper">
+            <div id="dropZone">
+                <label id="selectBtn" for="imgSelect" class="button soft">
+                    Select an image...
+                </label>
+                <input id="imgSelect" name="imgSelect" type="file"><br><br>
+                ...or drag & drop here.
+            </div>
+        </div>
+
+        <div id="wrapper">
+            <div id="original">
+                <canvas id="orgCanvas" width="600px" height="400px" style="border:1px solid #f7f7f7"></canvas>
+                <br><br>
+                <input type="range" min="0" max="1000" value="500" class="rangeslider" id="percSlider">
+            </div>
+            <div id="mirror">
+                <canvas id="mirCanvas" width="600px" height="400px" style="border:1px solid #f7f7f7"></canvas>
+                <br><br>
+
+                <table id="rightPanel" cellpadding="10">
+                    <tr>
+                        <td>
+                            <b>Left Side</b>
+                        </td>
+                        <td>
+                            <label class="switch">
+                                <input id="lrToggle" type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                        <td>
+                            <b>Right Side</b>
+                        </td>
+                        <td>
+                            <button id="downloadBtn" class="button soft">Download</button>
+                        </td>
+                        <td>
+                            <button id="download3in1Btn" class="button soft">Download "3 in 1"</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="unitinu.js"></script>
+    </body>
+</html>
